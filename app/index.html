@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="lawxor">
+<head>
+	<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/app.css">
+</head>
+	<body>
+		<!-- main window content -->
+		<div>
+			<div ng-controller="personCtrl">
+			 	<input type="text"  ng-model="firstName" placeholder="First Name"><br />
+			 	<input  type="text"  ng-model="lastName" placeholder="Last Name">
+		 	</div>
+		 	<br>
+		 	<p>{{firstName}}&nbsp;{{lastName}}</p>
+		</div>
+	</body>
+
+	<!-- Vendor scripts first -->
+	<script src="/lib/angular/angular.min.js"></script>
+
+	<!-- our app js, minified, concat'd -->
+	<!--<script src="/app.js"></script> -->
+	<script>
+	var app = angular.module('lawxor', []);
+	app.controller('personCtrl', function($scope){
+		$scope.firstName = "Brad";
+		$scope.lastName = "Teague";
+		
+	}]);
+	</script>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "lawxor",
+  "version": "1.0.0",
+  "description": "Continuing education website for lawyers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbteague/lawxor.git"
+  },
+  "author": "Brad Teague",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbteague/lawxor/issues"
+  },
+  "homepage": "https://github.com/jbteague/lawxor",
+  "dependencies": {
+    "angular": "^1.3.15",
+    "angular-animate": "^1.3.15",
+    "angular-route": "^1.3.15",
+    "font-awesome": "^4.3.0",
+    "hapi": "^8.4.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-watch": "^4.2.4"
+  }
+}
